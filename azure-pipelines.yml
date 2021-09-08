@@ -1,0 +1,20 @@
+trigger:
+- main
+
+pr:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+   
+variables:
+  imageName: 'rserver-dev'
+  DOCKER_BUILDKIT: 1
+    
+steps:
+- task: Docker@2
+  displayName: Build development rserver
+  inputs:
+    repository: $(imageName)
+    command: build
+    Dockerfile: development/rserver-dev

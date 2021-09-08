@@ -1,0 +1,54 @@
+{
+  "name": "@datashield/rserver-survival",
+  "version": "1.0.0",
+  "description": "RServe 3.6.3 container with MOLGENIS RServer 6.1.0 and dsSurvival 1.x",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:datashield/docker-armadillo-rserver-base.git"
+  },
+  "author": "Sido Haakma",
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/git": "^7.0.8",
+    "@semantic-release/npm": "^7.0.4",
+    "semantic-release": "^15.13.3",
+    "semantic-release-commit-filter": "^1.0.2"
+  },
+  "scripts": {
+    "release": "semantic-release --ci"
+  },
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md"
+          ]
+        }
+      ],
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ],
+      "@semantic-release/git"
+    ],
+    "extends": [
+      "semantic-release-commit-filter"
+    ]
+  }
+}
