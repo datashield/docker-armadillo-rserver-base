@@ -6,6 +6,7 @@ pr:
 
 pool:
   vmImage: 'ubuntu-latest'
+  demands: Limit -equals DisableParallel 
    
 variables:
   DOCKER_BUILDKIT: 1
