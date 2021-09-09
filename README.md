@@ -12,7 +12,7 @@ Development
 - DataSHIELD Base development environment [dsBase](https://github.com/datashield/dsBase) --> master branch
 - Survival environment [dsSurival](https://github.com/datashield/dsBase)
 - Mediation environment [dsMediation](https://github.com/datashield/dsBase)
-- Microbiome environment [dsMediation](https://github.com/datashield/dsBase)
+- Microbiome environment [dsMicrobiome](https://github.com/datashield/dsBase)
 
 You can you these images to support different analysis environments on the Armadillo backend.
 ## Development

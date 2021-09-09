@@ -8,13 +8,12 @@ pool:
   vmImage: 'ubuntu-latest'
    
 variables:
-  imageName: 'rserver-dev'
   DOCKER_BUILDKIT: 1
     
 steps:
-- task: Docker@2
-  displayName: Build development rserver
+- task: Bash@3
+  displayName: Build all rserver images
   inputs:
-    repository: $(imageName)
-    command: build
-    Dockerfile: development/rserver-dev
+    filePath: .azure/build_docker.bash
+  env:
+    MYSECRET: $(Foo)
