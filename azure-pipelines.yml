@@ -1,20 +1,15 @@
-trigger:
-- main
+# trigger:
+# - main
 
 pr:
 - main
 
-pool:
-  vmImage: 'ubuntu-latest'
-   
-variables:
-  imageName: 'rserver-dev'
-  DOCKER_BUILDKIT: 1
-    
-steps:
-- task: Docker@2
-  displayName: Build development rserver
-  inputs:
-    repository: $(imageName)
-    command: build
-    Dockerfile: development/rserver-dev
+jobs:  
+  - job: DockerPipeline 
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - task: Bash@3
+      displayName: Build all rserver images
+      inputs:
+        filePath: .azure/build_docker.bash
