@@ -2,8 +2,18 @@
 # Azure Pipeline predefined environment variables
 # - BUILD_REASON: we check on "PullRequest"
 # - AGENT_BUILDDIRECTORY: we need go back to this directory after the loop
+# - AGENT_HOMEDIRECTORY: we need this to store the docker credentials
 # - SYSTEM_PULLREQUEST_PULLREQUESTID: PullRequestID from GitHub
 # - SYSTEM_PULLREQUEST_TARGETBRANCH: PullRequest target branch e.g. main
+# Additional environment variables to make sure the release works
+# - DOCKERHUB_AUTH: we use this credential to push the dockers to the registry
+# - GITHUB_TOKEN: semantic release uses this environment variable to push to github
+
+echo "Set the docker authentication configuration"
+DOCKER_CONFIG=${AGENT_HOMEDIRECTORY}/.docker
+mkdir -p ${DOCKER_CONFIG}
+set +x && echo "{\"auths\": \"https://index.docker.io/v1/\": {\"auth\": \"${DOCKERHUB_AUTH}\"}, \"registry.hub.docker.com\": {\"auth\": \"${DOCKERHUB_AUTH}\"}}}' > ${DOCKER_CONFIG}/config.json"
+
 
 envs=($(ls -d */))
 for env in "${envs[@]}"

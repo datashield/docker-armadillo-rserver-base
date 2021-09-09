@@ -15,5 +15,3 @@ steps:
   displayName: Build all rserver images
   inputs:
     filePath: .azure/build_docker.bash
-  env:
-    MYSECRET: $(Foo)
