@@ -1,4 +1,4 @@
-# RServer Armadillo Docker images
+# RServer Armadillo containers
 This repository contains the different analysis environments for the Armadillo DataSHIELD platform.
 
 Currently we support these analysis environments:
