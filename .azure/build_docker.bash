@@ -11,8 +11,8 @@
 
 echo "Set the docker authentication configuration"
 DOCKER_CONFIG=${AGENT_HOMEDIRECTORY}/.docker
-mkdir -p ${DOCKER_CONFIG}
-set +x && echo "{\"auths\": \"https://index.docker.io/v1/\": {\"auth\": \"${DOCKERHUB_AUTH}\"}, \"registry.hub.docker.com\": {\"auth\": \"${DOCKERHUB_AUTH}\"}}}' > ${DOCKER_CONFIG}/config.json"
+mkdir -p "${DOCKER_CONFIG}"
+set +x && echo "{\"auths\": \"https://index.docker.io/v1/\": {\"auth\": \"${DOCKERHUB_AUTH}\"}, \"registry.hub.docker.com\": {\"auth\": \"${DOCKERHUB_AUTH}\"}}}" > "${DOCKER_CONFIG}/config.json"
 
 
 envs=($(ls -d */))
