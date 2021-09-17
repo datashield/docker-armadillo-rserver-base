@@ -1,6 +1,6 @@
 {
   "name": "@datashield/rserver",
-  "version": "2.0.2",
+  "version": "1.0.0",
   "license": "LGPL-3.0",
   "description": "RServe 3.6.3 container with dsBase 6.x",
   "repository": {
