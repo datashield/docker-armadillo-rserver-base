@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/rserver-v1.0.0...@datashield/rserver-v1.0.1) (2021-09-22)
+
+
+### Bug Fixes
+
+* rserver image to be release on DataSHIELD platform ([aa40ccc](https://github.com/datashield/docker-armadillo-rserver-base/commit/aa40ccc00b2a38e7609b0ddb1e9697bc9798e4e7))
+
 # 1.0.0 (2021-09-17)
 
 
