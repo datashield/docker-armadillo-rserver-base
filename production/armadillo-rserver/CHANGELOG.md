@@ -1,3 +1,10 @@
+# 1.0.0 (2021-09-22)
+
+
+### Bug Fixes
+
+* rename babse image to armadillo-rserver ([74cf84f](https://github.com/datashield/docker-armadillo-rserver-base/commit/74cf84faf3d4f582c63fce1b851b84dba937f13b))
+
 ## [1.0.1](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/rserver-v1.0.0...@datashield/rserver-v1.0.1) (2021-09-22)
 
 
