@@ -4,7 +4,9 @@ The DataSHIELD RServer has installed collections of tools to support DataSHIELD 
 
 ## Contents
 There are several DataSHIELD related dependencies installed
-- [dsMicrobiome](https://github.com/datashield/dsMicrobiome/tree/dev)=dev
+- [dsBaseClient](https://github.com/datashield/dsBaseClient/tree/6.1.0)=6.1.0
+- [dsOmicsClient](https://github.com/isglobal-brge/dsOmicsClient/tree/v1.0.7)=1.0.7
+- [dsMicrobiome](https://github.com/StuartWheater/dsMicrobiome/tree/dev)=dev
 
 ## Usage
 There are several platforms on which you can run RServer.
