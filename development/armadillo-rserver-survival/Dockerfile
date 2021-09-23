@@ -1,6 +1,6 @@
-FROM molgenis/rserver:2.0.1
+FROM datashield/armadillo-rserver:1.0.2
 
-# Install additional dsSurvival package
+# Install dsSurvival package
 ENV DSSURVIVAL_VERSION "v1.0.0"
 RUN installGithub.r "neelsoumya/dsSurvival@${DSSURVIVAL_VERSION}"
 

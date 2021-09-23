@@ -1,4 +1,4 @@
-FROM molgenis/rserver:2.0.1
+FROM datashield/armadillo-rserver:1.0.2
 
 # Install littler to use BioConductor Manager
 RUN apt-get install liblzma-dev libicu-dev -y
