@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-microbiome-v1.0.0...@datashield/armadillo-rserver-microbiome-v1.0.1) (2021-09-23)
+
+
+### Bug Fixes
+
+* add usage and specific content ([a7c12e0](https://github.com/datashield/docker-armadillo-rserver-base/commit/a7c12e04a167a5ba4109adba54740207d3329156))
+* separate dependencies of installation of MicroBiome package ([eea79fb](https://github.com/datashield/docker-armadillo-rserver-base/commit/eea79fb017e8f4d856d1556e090c87144b2e1e7e))
+
 # 1.0.0 (2021-09-23)
 
 
