@@ -20,7 +20,7 @@ Run in docker-compose `docker-compose.yml`:
 ```yaml
 ...
 services:
-  armadillo-rserver:
+  armadillo-rserver-exposome:
     environment: 
      - DEBUG = TRUE
 ...
