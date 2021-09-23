@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-v1.0.0...@datashield/armadillo-rserver-v1.0.1) (2021-09-23)
+
+
+### Bug Fixes
+
+* updated documentation above the methods ([ff4e5e1](https://github.com/datashield/docker-armadillo-rserver-base/commit/ff4e5e1d38233e6f833eaf20bb52f8c1e99566df))
+* updated README with the several deployment methods ([3c99b4b](https://github.com/datashield/docker-armadillo-rserver-base/commit/3c99b4b13fc6753bbfa5e0f8521cfd144411aa8a))
+
 # 1.0.0 (2021-09-22)
 
 
