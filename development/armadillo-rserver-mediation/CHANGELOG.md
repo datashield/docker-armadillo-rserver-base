@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-mediation-v1.0.0...@datashield/armadillo-rserver-mediation-v1.0.1) (2021-09-23)
+
+
+### Bug Fixes
+
+* github release flow for mediation image ([e17cb23](https://github.com/datashield/docker-armadillo-rserver-base/commit/e17cb230e426c396a2542563c106c06ca9fcad2b))
+* order of comments in mediation image ([1e6e5d6](https://github.com/datashield/docker-armadillo-rserver-base/commit/1e6e5d6f7cae83dc8e979ae1522c4b22ee167f0a))
+
 # 1.0.0 (2021-09-23)
 
 
