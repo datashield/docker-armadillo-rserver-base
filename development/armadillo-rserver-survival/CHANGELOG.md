@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-survival-v1.0.0...@datashield/armadillo-rserver-survival-v1.0.1) (2021-09-23)
+
+
+### Bug Fixes
+
+* updated usage documentation of survival image ([1b795d7](https://github.com/datashield/docker-armadillo-rserver-base/commit/1b795d7345fab9d6da68936372431c54f8718ae3))
+
 # 1.0.0 (2021-09-23)
 
 
