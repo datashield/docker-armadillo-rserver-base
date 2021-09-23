@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-exposome-v1.0.0...@datashield/armadillo-rserver-exposome-v1.0.1) (2021-09-23)
+
+
+### Bug Fixes
+
+* method docs in Dockerfile ([1d57213](https://github.com/datashield/docker-armadillo-rserver-base/commit/1d57213690dc1c300fdedd496d30035762edcdad))
+* updated deployment docs for Exposome environment ([e1d46de](https://github.com/datashield/docker-armadillo-rserver-base/commit/e1d46de5f8bb8c5dcbc644490b138c633ac8ac53))
+
 # 1.0.0 (2021-09-23)
 
 
