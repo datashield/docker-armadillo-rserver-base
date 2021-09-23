@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-v1.0.1...@datashield/armadillo-rserver-v1.0.2) (2021-09-23)
+
+
+### Bug Fixes
+
+* updated dependencies in README.mdx ([48b3157](https://github.com/datashield/docker-armadillo-rserver-base/commit/48b31577af536c8931e9f2c7a326672a7691d7d3))
+
 ## [1.0.1](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-v1.0.0...@datashield/armadillo-rserver-v1.0.1) (2021-09-23)
 
 
