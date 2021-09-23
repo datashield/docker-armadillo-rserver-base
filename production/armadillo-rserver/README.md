@@ -10,12 +10,12 @@ There are several DataSHIELD related dependencies installed
 ## Usage
 There are several platforms on which you can run RServer.
 
-### Run the image locally
+### Deploy locally
 You can steer the rserver at runtime using environment variables. You can toggle debug mode with the environment variable `DEBUG`.
 
 Run the docker locally (docker only):
 
-`docker run -e DEBUG=TRUE datashield/armadillo-rserver:1.0.0`
+`docker run -e DEBUG=TRUE datashield/armadillo-rserver:latest`
 
 Run in docker-compose `docker-compose.yml`:
 
@@ -28,11 +28,10 @@ services:
 ...
 ```
 
-Run in Ansible
+### Deploy using Ansible
 
 Check: https://galaxy.ansible.com/molgenis/armadillo
 
-Run in Kubbernetes
+### Deploy using Kubernetes and helm
 
 Check: https://github.com/molgenis/molgenis-ops-helm/tree/master/charts/molgenis-armadillo
-
