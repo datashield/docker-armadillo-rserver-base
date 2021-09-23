@@ -2,7 +2,7 @@ FROM datashield/armadillo-rserver-omics:1.0.1
 
 # Install dependencies dsMicrobiome package
 ENV DSBASE_VERSION "v6.2-dev"
-RUN installGithub.r "datashield/dsBase@${DSBASE_VERSION}}" --deps=TRUE
+RUN installGithub.r "datashield/dsBase@${DSBASE_VERSION}" --deps=TRUE
 
 # Install dsMicrobiome
 ENV DSMICROBIOME_VERSION "HEAD"
