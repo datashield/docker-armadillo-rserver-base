@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-microbiome-v1.0.1...@datashield/armadillo-rserver-microbiome-v1.0.2) (2021-09-23)
+
+
+### Bug Fixes
+
+* dsBase dev branch reference ([96c3afc](https://github.com/datashield/docker-armadillo-rserver-base/commit/96c3afc6d67ea8257d9641013cfb3f8b255cfdc0))
+
 ## [1.0.1](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-microbiome-v1.0.0...@datashield/armadillo-rserver-microbiome-v1.0.1) (2021-09-23)
 
 
