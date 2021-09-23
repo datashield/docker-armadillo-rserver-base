@@ -1,24 +1,35 @@
-# DataSHIELD R server - inclusive exposome environment
+# DataSHIELD R server - exposome environment
 
-The DataSHIELD RServer has installed collections of tools to support DataSHIELD analysis.
+The DataSHIELD RServer has installed collections of tools to support DataSHIELD in combination with Exposome analysis.
 
+## Contents
+There are several DataSHIELD related dependencies installed
+- [dsExposome](https://github.com/isglobal-brge/dsExposome/tree/v1.0.1)=1.0.1
 ## Usage
-You can steer the rserver at runtime using environment variables.
+There are several platforms on which you can run RServer.
 
-### Enabling debug mode
-You can toggle debug mode with the environment variable `DEBUG`.
+### Deploy locally
+You can steer the rserver at runtime using environment variables. You can toggle debug mode with the environment variable `DEBUG`.
 
-So for example in the `docker-compose.yml`:
+Run the docker locally (docker only):
+
+`docker run -e DEBUG=TRUE datashield/armadillo-rserver-exposome:latest`
+
+Run in docker-compose `docker-compose.yml`:
 
 ```yaml
 ...
 services:
-  rserver:
+  armadillo-rserver:
     environment: 
      - DEBUG = TRUE
 ...
 ```
 
-Or run the docker standalone:
+### Deploy using Ansible
 
-`docker run -e DEBUG=TRUE molgenis/rserver-exposome:1.0.0`
+Check: https://galaxy.ansible.com/molgenis/armadillo
+
+### Deploy using Kubernetes and helm
+
+Check: https://github.com/molgenis/molgenis-ops-helm/tree/master/charts/molgenis-armadillo
