@@ -5,7 +5,7 @@ ENV DEBUG FALSE
 # Copy script to install deps
 COPY scripts/install-arrow.bash /
 
-# Download, patch and install RServe
+# Install dependencies of OS to use RServe
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libssl-dev net-tools procps lsof libcurl4-openssl-dev git
 
@@ -32,4 +32,5 @@ ENV RESOURCER_VERSION "1.1.0"
 RUN install2.r --error httr --repos "https://cloud.r-project.org/"
 RUN install2.r --error "https://cloud.r-project.org/src/contrib/resourcer_${RESOURCER_VERSION}.tar.gz" --repos NULL
 
+# Startup the RServer
 CMD R -e "MolgenisRserve::Rserve(debug=${DEBUG}, args='--vanilla --RS-set remote=enable --RS-set auth=disable --RS-set daemon=disable')"
