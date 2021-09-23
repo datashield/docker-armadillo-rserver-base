@@ -1,7 +1,9 @@
 FROM datashield/armadillo-rserver:1.0.2
 
-# Install littler to use BioConductor Manager
+# Install OS dependencies for dsOmics
 RUN apt-get install liblzma-dev libicu-dev -y
+
+# Install littler to use BioConductor Manager
 RUN install2.r --error BiocManager littler --repos "https://cloud.r-project.org/"
 RUN ln -s /usr/local/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 
 
