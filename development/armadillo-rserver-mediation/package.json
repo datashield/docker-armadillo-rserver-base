@@ -27,6 +27,14 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       [
+        "@semantic-release/github",
+        {
+          "assets": [
+            "CHANGELOG.md"
+          ]
+        }
+      ],
+      [
         "@semantic-release/changelog",
         {
           "changelogFile": "CHANGELOG.md"
@@ -45,8 +53,7 @@
         {
           "npmPublish": false
         }
-      ],
-      "@semantic-release/git"
+      ]
     ],
     "extends": [
       "semantic-release-commit-filter"
