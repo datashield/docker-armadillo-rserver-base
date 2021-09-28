@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-v1.0.2...@datashield/armadillo-rserver-v1.0.3) (2021-09-28)
+
+
+### Bug Fixes
+
+* resourcer bump to 1.1.1 to prevend recusrive file copy ([d755a9a](https://github.com/datashield/docker-armadillo-rserver-base/commit/d755a9a7cd0006c687bfc9e6bd689c4d45c0b430))
+
 ## [1.0.2](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-v1.0.1...@datashield/armadillo-rserver-v1.0.2) (2021-09-23)
 
 
