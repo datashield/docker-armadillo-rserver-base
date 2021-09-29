@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-v1.0.3...@datashield/armadillo-rserver-v1.0.4) (2021-09-29)
+
+
+### Bug Fixes
+
+* remove resourcer package from base rserver image ([47bf5b0](https://github.com/datashield/docker-armadillo-rserver-base/commit/47bf5b0ec8bbb588c3ea26515fa33f4ce15a50e8))
+
 ## [1.0.3](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-v1.0.2...@datashield/armadillo-rserver-v1.0.3) (2021-09-28)
 
 
