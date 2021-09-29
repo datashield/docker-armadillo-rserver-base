@@ -27,10 +27,5 @@ ENV DSBASE_VERSION "6.1.0"
 RUN install2.r --error RANN stringr lme4 ggplot2 reshape2 --repos "https://cloud.r-project.org/"
 RUN installGithub.r "datashield/dsBase@${DSBASE_VERSION}"
 
-# Install resourser package (this is needed because the Armadillo needs it during boot)
-ENV RESOURCER_VERSION "1.1.1"
-RUN install2.r --error httr --repos "https://cloud.r-project.org/"
-RUN install2.r --error "https://cloud.r-project.org/src/contrib/resourcer_${RESOURCER_VERSION}.tar.gz" --repos NULL
-
 # Startup the RServer
 CMD R -e "MolgenisRserve::Rserve(debug=${DEBUG}, args='--vanilla --RS-set remote=enable --RS-set auth=disable --RS-set daemon=disable')"
