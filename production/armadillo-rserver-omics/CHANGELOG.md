@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-omics-v1.0.1...@datashield/armadillo-rserver-omics-v1.1.0) (2021-09-29)
+
+
+### Features
+
+* add resourcer package to work with omics data ([160f171](https://github.com/datashield/docker-armadillo-rserver-base/commit/160f1717bda034ec62b1a7fde1f1b0944887971e))
+
 ## [1.0.1](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-omics-v1.0.0...@datashield/armadillo-rserver-omics-v1.0.1) (2021-09-23)
 
 
