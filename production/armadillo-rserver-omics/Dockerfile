@@ -7,6 +7,11 @@ RUN apt-get install liblzma-dev libicu-dev -y
 RUN install2.r --error BiocManager littler --repos "https://cloud.r-project.org/"
 RUN ln -s /usr/local/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 
 
+# Install resourser package (this is needed because the Armadillo needs it during boot)
+ENV RESOURCER_VERSION "1.1.1"
+RUN install2.r --error httr --repos "https://cloud.r-project.org/"
+RUN install2.r --error "https://cloud.r-project.org/src/contrib/resourcer_${RESOURCER_VERSION}.tar.gz" --repos NULL
+
 # Install additional dsOmics package
 ENV DSOMICS_VERSION "v1.0.7"
 RUN installGithub.r "isglobal-brge/dsOmics@${DSOMICS_VERSION}" --deps=TRUE
