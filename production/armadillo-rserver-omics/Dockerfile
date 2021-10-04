@@ -1,4 +1,4 @@
-FROM datashield/armadillo-rserver:1.0.2
+FROM datashield/armadillo-rserver:1.0.4
 
 # Install OS dependencies for dsOmics
 RUN apt-get install liblzma-dev libicu-dev -y
