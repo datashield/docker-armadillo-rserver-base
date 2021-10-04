@@ -3,7 +3,7 @@ The DataSHIELD RServer has installed collections of tools to support DataSHIELD 
 
 ## Contents
 There are several DataSHIELD related dependencies installed
-- [dsBase](https://github.com/datashield/dsBase/tree/dev)=dev
+- [dsBase](https://github.com/datashield/dsBase/tree/x.x-dev)=x.x-dev
 
 ## Usage
 There are several platforms on which you can run RServer.
