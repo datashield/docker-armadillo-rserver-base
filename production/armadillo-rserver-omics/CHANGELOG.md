@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-omics-v1.1.0...@datashield/armadillo-rserver-omics-v1.2.0) (2021-10-04)
+
+
+### Features
+
+* update base rserver image to 1.0.4 ([5b6ce2b](https://github.com/datashield/docker-armadillo-rserver-base/commit/5b6ce2b44565ab358230ec79250da746ec0a6687))
+
 # [1.1.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-omics-v1.0.1...@datashield/armadillo-rserver-omics-v1.1.0) (2021-09-29)
 
 
