@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-dev-v1.0.0...@datashield/armadillo-rserver-dev-v1.1.0) (2021-10-04)
+
+
+### Features
+
+* rebuild the development branch of dsBase ([7ae51ec](https://github.com/datashield/docker-armadillo-rserver-base/commit/7ae51ec28b49b1001177cd4c1df31faf232b9025))
+
 # 1.0.0 (2021-09-23)
 
 
