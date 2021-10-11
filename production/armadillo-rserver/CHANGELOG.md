@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-v1.0.4...@datashield/armadillo-rserver-v2.0.0) (2021-10-11)
+
+
+### Features
+
+* move to R 4 and Arrow 5 ([7485218](https://github.com/datashield/docker-armadillo-rserver-base/commit/7485218a5eeaaa8d1c47cd83d1dd2d48a3d2564a))
+
+
+### BREAKING CHANGES
+
+* move to R 4.1.1 and Arrow 5.0.0
+
 ## [1.0.4](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-v1.0.3...@datashield/armadillo-rserver-v1.0.4) (2021-09-29)
 
 
