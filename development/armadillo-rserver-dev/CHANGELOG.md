@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-dev-v1.1.0...@datashield/armadillo-rserver-dev-v2.0.0) (2021-10-11)
+
+
+### Features
+
+* **dev:** move to new rserver base layer ([9a8b9ee](https://github.com/datashield/docker-armadillo-rserver-base/commit/9a8b9ee261cb54ad067214d97412fadd33195fb5))
+
+
+### BREAKING CHANGES
+
+* **dev:** move to new rserver bbase layer (R 4.1.1 and Arrow 5.0.0)
+
 # [1.1.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-dev-v1.0.0...@datashield/armadillo-rserver-dev-v1.1.0) (2021-10-04)
 
 
