@@ -1,4 +1,4 @@
-FROM datashield/armadillo-rserver:1.0.3
+FROM datashield/armadillo-rserver:2.0.0
 
 # Install dsBase development package
 ENV DSBASE_BRANCH "v6.2-dev"
