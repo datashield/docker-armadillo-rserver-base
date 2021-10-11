@@ -10,7 +10,7 @@ jobs:
       vmImage: 'ubuntu-latest'
     steps:
     - task: Bash@3
-      displayName: Build all rserver images
+      displayName: Check, build and release images
       inputs:
         filePath: .azure/build_docker.bash
       env:
