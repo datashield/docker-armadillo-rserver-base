@@ -1,3 +1,21 @@
+# [2.0.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-omics-v1.2.0...@datashield/armadillo-rserver-omics-v2.0.0) (2021-10-13)
+
+
+### Bug Fixes
+
+* add libxml2 os library ([f3799ec](https://github.com/datashield/docker-armadillo-rserver-base/commit/f3799ec2edaca97984529347d2ab842449930fc4))
+* **omics:** add additional dependencies ([760a2a1](https://github.com/datashield/docker-armadillo-rserver-base/commit/760a2a1c19445d23afbadb7ee9d5127fc5bbace2))
+
+
+### Features
+
+* **omics:** move to new base layer ([ef3369e](https://github.com/datashield/docker-armadillo-rserver-base/commit/ef3369edaf660593052ddd2a1576155d19782cb4))
+
+
+### BREAKING CHANGES
+
+* **omics:** move to R 4.1.1 and Arrow 5.0.0
+
 # [1.2.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-omics-v1.1.0...@datashield/armadillo-rserver-omics-v1.2.0) (2021-10-04)
 
 
