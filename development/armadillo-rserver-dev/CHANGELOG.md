@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-dev-v2.0.0...@datashield/armadillo-rserver-dev-v2.0.1) (2021-10-20)
+
+
+### Bug Fixes
+
+* bump version in package.json ([d61172b](https://github.com/datashield/docker-armadillo-rserver-base/commit/d61172bbfdb8a7b9532657358e241f7e21fb5c4f))
+
 # [2.0.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-dev-v1.1.0...@datashield/armadillo-rserver-dev-v2.0.0) (2021-10-11)
 
 
