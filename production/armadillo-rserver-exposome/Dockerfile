@@ -1,4 +1,4 @@
-FROM datashield/armadillo-rserver:1.0.2
+FROM datashield/armadillo-rserver:2.0.0
 
 # Install OD dependencies
 RUN apt-get install liblzma-dev libicu-dev -y
