@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-exposome-v1.0.1...@datashield/armadillo-rserver-exposome-v1.1.0) (2021-10-25)
+
+
+### Features
+
+* **exposome:** upgraded base layer to 2.0.0 ([e193ffc](https://github.com/datashield/docker-armadillo-rserver-base/commit/e193ffccb23ec465d67878621185c20abc0177fc))
+
 ## [1.0.1](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-exposome-v1.0.0...@datashield/armadillo-rserver-exposome-v1.0.1) (2021-09-23)
 
 
