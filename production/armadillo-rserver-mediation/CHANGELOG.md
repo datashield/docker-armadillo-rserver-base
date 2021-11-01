@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-mediation-v1.0.1...@datashield/armadillo-rserver-mediation-v1.1.0) (2021-11-01)
+
+
+### Features
+
+* **mediation:** moved to production and updated base layer to 2.0.0 ([73e6445](https://github.com/datashield/docker-armadillo-rserver-base/commit/73e6445f43c97f9a943fc4bf92a166ad398b23e0))
+
 ## [1.0.1](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-mediation-v1.0.0...@datashield/armadillo-rserver-mediation-v1.0.1) (2021-09-23)
 
 
