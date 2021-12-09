@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-mediation-v1.1.0...@datashield/armadillo-rserver-mediation-v1.2.0) (2021-12-09)
+
+
+### Features
+
+* **mediation:** add v0.0.3-dev to medation package ([4faec67](https://github.com/datashield/docker-armadillo-rserver-base/commit/4faec6700faa5fde95f463f543a40eb4cc399302))
+
 # [1.1.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-mediation-v1.0.1...@datashield/armadillo-rserver-mediation-v1.1.0) (2021-11-01)
 
 
