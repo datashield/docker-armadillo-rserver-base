@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-exposome-v1.1.0...@datashield/armadillo-rserver-exposome-v1.2.0) (2022-02-15)
+
+
+### Features
+
+* **exposome:** upgrade dsExposome to 1.0.2 ([f339256](https://github.com/datashield/docker-armadillo-rserver-base/commit/f339256db7d37298cff9a25b1f44681c41b145b0))
+
 # [1.1.0](https://github.com/datashield/docker-armadillo-rserver-base/compare/@datashield/armadillo-rserver-exposome-v1.0.1...@datashield/armadillo-rserver-exposome-v1.1.0) (2021-10-25)
 
 
