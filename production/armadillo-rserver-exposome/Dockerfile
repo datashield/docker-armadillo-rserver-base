@@ -11,7 +11,7 @@ RUN ln -s /usr/local/lib/R/site-library/littler/examples/installBioc.r /usr/loca
 RUN installBioc.r rexposome
 
 # Install dsExposome package
-ENV DSEXPOSOME_VERSION "v1.0.1"
+ENV DSEXPOSOME_VERSION "v1.0.2"
 RUN installGithub.r "isglobal-brge/dsExposome@${DSEXPOSOME_VERSION}"
 
 CMD R -e "MolgenisRserve::Rserve(debug=${DEBUG}, args='--vanilla --RS-set remote=enable --RS-set auth=disable --RS-set daemon=disable')"
