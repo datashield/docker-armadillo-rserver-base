@@ -22,7 +22,7 @@ ENV RSERVER_VERSION "0.1.2"
 RUN install2.r --error "https://registry.molgenis.org/repository/r-hosted/src/contrib/MolgenisRserve_${RSERVER_VERSION}.tar.gz" --repos NULL
 
 # Install dsBase package
-ENV DSBASE_VERSION "6.1.0"
+ENV DSBASE_VERSION "6.2.0"
 RUN install2.r --error RANN stringr lme4 ggplot2 reshape2 --repos "https://cloud.r-project.org/"
 RUN installGithub.r "datashield/dsBase@${DSBASE_VERSION}"
 
