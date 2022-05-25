@@ -1,4 +1,4 @@
-FROM datashield/armadillo-rserver:1.0.2
+FROM datashield/armadillo-rserver:6.1
 
 # Install dsSurvival package
 ENV DSSURVIVAL_VERSION "v1.0.0"
