@@ -1,4 +1,6 @@
 FROM rocker/r-ver:4.1.1
+# R versions larger then 4.1.1 break the armadillo backend 
+# R-options won't load anymore
 
 ENV DEBUG FALSE
 
@@ -38,8 +40,8 @@ ENV RSERVER_VERSION "0.1.2"
 RUN install2.r --error "https://registry.molgenis.org/repository/r-hosted/src/contrib/MolgenisRserve_${RSERVER_VERSION}.tar.gz" --repos NULL
 
 # Install dsBase package
-ENV DS_PKG_VERSION "6.1.0"
-RUN install2.r --error RANN stringr lme4 ggplot2 reshape2 --repos "https://cloud.r-project.org/"
+ENV DS_PKG_VERSION "6.2.0"
+RUN install2.r --error RANN stringr lme4 ggplot2 reshape2 polycor splines --repos "https://cloud.r-project.org/"
 RUN installGithub.r "datashield/dsBase@${DS_PKG_VERSION}"
 
 # Startup the RServer
