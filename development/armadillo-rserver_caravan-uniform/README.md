@@ -13,7 +13,7 @@ You can steer the rserver at runtime using environment variables. You can toggle
 
 Run the docker locally (docker only):
 
-`docker run -e DEBUG=TRUE datashield/armadillo-rserver-dev:latest`
+`docker run -e DEBUG=TRUE datashield/docker-armadillo-rserver-base/development/armadillo-rserver-caravan_uniform:1.0.0`
 
 Run in docker-compose `docker-compose.yml`:
 
