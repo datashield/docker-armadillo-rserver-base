@@ -4,8 +4,9 @@ trigger:
 pr:
 - main
 
-jobs:  
-  - job: DockerPipeline 
+jobs:
+  - job: DockerPipeline
+    timeoutInMinutes: 120
     pool:
       vmImage: 'ubuntu-latest'
     steps:
@@ -16,4 +17,3 @@ jobs:
       env:
         DOCKERHUB_AUTH: $(DOCKERHUB_AUTH)
         GITHUB_TOKEN: $(GITHUB_TOKEN)
-        
