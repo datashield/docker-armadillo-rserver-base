@@ -4,22 +4,14 @@ FROM datashield/armadillo-rserver_caravan:1.0.0
 RUN apt-get update -y
 
 # Install OS dependencies
-RUN apt-get install liblzma-dev libicu-dev libssh-dev -y
-
-# Install littler to use BioConductor Manager
-RUN install2.r --error BiocManager littler --repos "https://cloud.r-project.org/"
-RUN ln -s /usr/local/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r
-
-# Install resourcer
-ENV RESOURCER_BRANCH "1.2.1"
-RUN installGithub.r "obiba/resourcer@${RESOURCER_BRANCH}" --deps TRUE
+RUN apt-get install liblzma-dev libicu-dev -y
 
 # Install dsBase development package
 ENV DSBASE_BRANCH "6.2.0"
 RUN installGithub.r "datashield/dsBase@${DSBASE_BRANCH}" --deps TRUE
 
 # Install dsMediation development package
-ENV DSMEDIATION_BRANCH "0.0.2"
+ENV DSMEDIATION_BRANCH "0.0.3"
 RUN installGithub.r "datashield/dsMediation@${DSMEDIATION_BRANCH}" --deps TRUE
 
 # Install dsMTLBase development package
