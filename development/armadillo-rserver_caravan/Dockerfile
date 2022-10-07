@@ -17,7 +17,7 @@ RUN install2.r 'remotes'
 RUN install2.r --error BiocManager littler --repos "https://cloud.r-project.org/"
 
 # Install resourcer
-ENV RESOURCER_BRANCH "1.2.1"
+ENV RESOURCER_BRANCH "1.3.0"
 RUN installGithub.r "obiba/resourcer@${RESOURCER_BRANCH}" --deps TRUE
 
 # Setup entry point to MolgenisRServer::Rserve
