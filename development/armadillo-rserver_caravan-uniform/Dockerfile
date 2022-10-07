@@ -1,4 +1,4 @@
-FROM datashield/armadillo-rserver_caravan:1.0.0
+FROM datashield/armadillo-rserver_caravan:1.1.0
 
 # Update package metdata
 RUN apt-get update -y
