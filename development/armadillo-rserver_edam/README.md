@@ -8,8 +8,7 @@ There are several DataSHIELD related dependencies installed
 
 This DataSHIELD Packages included are:
 - R 4.2.0
-- resourcer 1.3.0
-- BiocMamager 1.30.18
+- resourcer 1.2.0
 
 ## Usage
 There are several platforms on which you can run RServer.
@@ -19,7 +18,7 @@ You can steer the rserver at runtime using environment variables. You can toggle
 
 Run the docker locally (docker only):
 
-`docker run -e DEBUG=TRUE datashield/docker-armadillo-rserver-base/development/armadillo-rserver_caravan:1.1.0`
+`docker run -e DEBUG=TRUE datashield/docker-armadillo-rserver-base/development/armadillo-rserver_edam:1.0.0`
 
 Run in docker-compose `docker-compose.yml`:
 
