@@ -1,4 +1,4 @@
-FROM datashield/armadillo-rserver_caravan:1.0.0
+FROM datashield/armadillo-rserver_caravan:1.0.1
 
 # Update package metdata
 RUN apt-get update -y
@@ -19,7 +19,7 @@ ENV DSMTLBASE_BRANCH "0.10.0"
 RUN installGithub.r "datashield/dsMTLBase@${DSMTLBASE_BRANCH}" --deps TRUE
 
 # Install dsSurvival development package
-ENV DSSURVIVAL_BRANCH "v2.1.1"
+ENV DSSURVIVAL_BRANCH "v2.1.2"
 RUN installGithub.r "neelsoumya/dsSurvival@${DSSURVIVAL_BRANCH}" --deps TRUE
 
 # Install BioConductor package
