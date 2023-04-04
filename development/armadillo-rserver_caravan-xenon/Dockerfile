@@ -20,9 +20,8 @@ ENV DSMEDIATION_BRANCH "0.0.3"
 RUN installGithub.r "datashield/dsMediation@${DSMEDIATION_BRANCH}" --deps TRUE
 
 # Install dsMTLBase development package
-# ENV DSMTLBASE_BRANCH "0.11.0"
-ENV DSMTLBASE_BRANCH "main"
-RUN installGithub.r "datashield/dsMTLBase@${DSMTLBASE_BRANCH}" --deps TRUE
+ENV DSMTLBASE_BRANCH "0.9.9"
+RUN installGithub.r "transbioZI/dsMTLBase@${DSMTLBASE_BRANCH}" --deps TRUE
 
 # Install dsSurvival development package
 ENV DSSURVIVAL_BRANCH "v2.1.2"
