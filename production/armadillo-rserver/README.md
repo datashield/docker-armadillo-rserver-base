@@ -3,9 +3,8 @@ The RServer for DataSHIELD has installed collections of tools to support DataSHI
 
 ## Contents
 There are several DataSHIELD related dependencies installed
-- [RServer](https://github.com/molgenis/Rserve/releases/tag/v0.1.2)=0.1.2
+- [RServer](https://github.com/molgenis/Rserve/releases/tag/v0.1.2)
 - [dsBase](https://github.com/datashield/dsBase)
-- [resourcer](https://github.com/obiba/resourcer)
 
 ## Usage
 There are several platforms on which you can run RServer.
