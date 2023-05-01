@@ -1,4 +1,4 @@
-FROM rocker/r-ver:4.1.1
+FROM rocker/r-ver:4.3.0
 
 ENV DEBUG FALSE
 
@@ -7,7 +7,7 @@ COPY scripts/install-arrow.bash /
 
 # Install dependencies of OS to use RServe
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
-  libssl-dev net-tools procps lsof libcurl4-openssl-dev git
+  libssl-dev net-tools procps lsof libcurl4-openssl-dev git cmake
 
 # Install up-to-date version of apache arrow
 ENV ARROW_VERSION "5.0.0"
