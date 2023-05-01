@@ -23,4 +23,4 @@ ENV DSSURVIVAL_BRANCH "v2.1.0"
 RUN installGithub.r "neelsoumya/dsSurvival@${DSSURVIVAL_BRANCH}" --deps TRUE
 
 # Setup entry point to MolgenisRServer::Rserve
-CMD R -e "MolgenisRserve::Rserve(debug=${DEBUG}, args='--vanilla --RS-set remote=enable --RS-set auth=disable --RS-set daemon=disable')"
+# CMD R -e "MolgenisRserve::Rserve(debug=${DEBUG}, args='--vanilla --RS-set remote=enable --RS-set auth=disable --RS-set daemon=disable')"
