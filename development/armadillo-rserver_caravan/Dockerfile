@@ -36,7 +36,7 @@ RUN installGithub.r "obiba/resourcer@${RESOURCER_BRANCH}" --deps TRUE
 
 # Package
 LABEL "image_name"="caravan/1.0.0"
-LABEL "platform_package"="Armadillo-3.1.1,R-4.1.3,resourcer-1.4.0,BiocManager-1.30.18"
+LABEL "platform_packages"="Armadillo-3.1.1,R-4.1.3,resourcer-1.4.0,BiocManager-1.30.18"
 
 # Setup entry point to MolgenisRServer::Rserve
 CMD R -e "MolgenisRserve::Rserve(debug=${DEBUG}, args='--vanilla --RS-set remote=enable --RS-set auth=disable --RS-set daemon=disable')"
