@@ -1,0 +1,12 @@
+#
+# Process 'datashield/armadillo-rserver_caravan-uniform:2.0.0'
+#
+
+FROM datashield/armadillo-rserver_caravan-uniform:1.0.1
+
+# Update package metdata
+RUN apt-get update -y
+
+# Install dsSurvival development package
+ENV RESOURCER_BRANCH "1.4.0"
+RUN installGithub.r "obiba/resourcer@${RESOURCER_BRANCH}" --deps TRUE

@@ -7,7 +7,7 @@ The purpose of the docker image generate by this configuration is intended to su
 There are several DataSHIELD related dependencies installed
 
 This DataSHIELD Packages included are:
-- [dsBase](https://github.com/datashield/dsBase/tree/6.2.0) 6.3.0
+- [dsBase](https://github.com/datashield/dsBase/tree/6.3.0) 6.3.0
 - [dsMediation](https://github.com/datashield/dsMediation/tree/0.0.3) 0.0.3
 - [dsMTLBase](https://github.com/transbioZI/dsMTLBase/tree/main) 0.9.9
 - [dsSurvival](https://github.com/neelsoumya/dsSurvival/tree/v1.0.1) v2.1.2

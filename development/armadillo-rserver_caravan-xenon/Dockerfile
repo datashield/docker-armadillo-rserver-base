@@ -1,5 +1,5 @@
 #
-# Process 'datashield/armadillo-rserver_caravan-xenon:1.0.1'
+# Process 'datashield/armadillo-rserver_caravan-xenon:1.0.0'
 #
 
 FROM datashield/armadillo-rserver_caravan:1.0.0
@@ -11,8 +11,7 @@ RUN apt-get update -y
 RUN apt-get install liblzma-dev libicu-dev -y
 
 # Install dsBase development package
-# ENV DSBASE_BRANCH "6.3.0"
-ENV DSBASE_BRANCH "6.2.0"
+ENV DSBASE_BRANCH "6.3.0"
 RUN installGithub.r "datashield/dsBase@${DSBASE_BRANCH}" --deps TRUE
 
 # Install dsMediation development package

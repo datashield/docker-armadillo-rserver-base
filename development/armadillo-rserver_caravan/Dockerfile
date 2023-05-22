@@ -1,4 +1,5 @@
 FROM rocker/r-ver:4.1.3
+LABEL "R (rocker)"="4.1.3"
 
 ENV DEBUG FALSE
 
@@ -18,6 +19,7 @@ RUN install2.r --error remotes ps dplyr magrittr --repos "https://cloud.r-projec
 
 # Install MolgenisRserve
 ENV MOLGENISRSERVER_VERSION=0.1.2
+LABEL "MolgenisRserve"=${MOLGENISRSERVER_VERSION}
 RUN install2.r --error "https://registry.molgenis.org/repository/r-hosted/src/contrib/MolgenisRserve_${MOLGENISRSERVER_VERSION}.tar.gz" --deps TRUE --repos NULL
 
 # Install littler 
@@ -28,7 +30,8 @@ RUN ln -s /usr/local/lib/R/site-library/littler/examples/installBioc.r /usr/loca
 RUN install2.r --error BiocManager littler --repos "https://cloud.r-project.org/"
 
 # Install resourcer
-ENV RESOURCER_BRANCH "1.3.0"
+ENV RESOURCER_BRANCH "1.4.0"
+LABEL "resourcer"=${RESOURCER_BRANCH}
 RUN installGithub.r "obiba/resourcer@${RESOURCER_BRANCH}" --deps TRUE
 
 # Setup entry point to MolgenisRServer::Rserve
