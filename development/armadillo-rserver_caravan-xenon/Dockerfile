@@ -2,7 +2,7 @@
 # Process 'datashield/armadillo-rserver_caravan-xenon:1.0.0'
 #
 
-FROM datashield/armadillo-rserver_caravan:1.1.0
+FROM datashield/armadillo-rserver_caravan:1.1.1
 
 # Update package metdata
 RUN apt-get update -y
