@@ -16,10 +16,6 @@ RUN R -e "source('https://raw.githubusercontent.com/apache/arrow/release-${ARROW
 # Install some debug packages needed by armadillo to retrieve list of R processes
 RUN install2.r --error remotes ps dplyr magrittr --repos "https://cloud.r-project.org/"
 
-# Install MolgenisRserve
-ENV MOLGENISRSERVER_VERSION=0.1.2
-RUN install2.r --error "https://registry.molgenis.org/repository/r-hosted/src/contrib/MolgenisRserve_${MOLGENISRSERVER_VERSION}.tar.gz" --deps TRUE --repos NULL
-
 # Install littler 
 RUN apt-get install littler -y
 RUN ln -s /usr/local/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r
@@ -32,4 +28,4 @@ ENV RESOURCER_BRANCH "1.4.0"
 RUN installGithub.r "obiba/resourcer@${RESOURCER_BRANCH}" --deps TRUE
 
 # Setup entry point to MolgenisRServer::Rserve
-CMD R -e "MolgenisRserve::Rserve(debug=${DEBUG}, args='--vanilla --RS-set remote=enable --RS-set auth=disable --RS-set daemon=disable')"
+CMD R -e "Rserve::Rserve(debug=${DEBUG}, args='--vanilla --RS-set remote=enable --RS-set auth=disable --RS-set daemon=disable')"
