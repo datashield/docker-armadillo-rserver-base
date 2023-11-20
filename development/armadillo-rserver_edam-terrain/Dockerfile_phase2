@@ -1,0 +1,5 @@
+FROM datashield/armadillo-rserver_edam-terrain:1.0.0
+
+# Install MolgenisRserve
+ENV MOLGENISRSERVER_VERSION "0.2.0"
+RUN install2.r --error "http://localhost/MolgenisRserve_0.2.0.tar.gz" --ncpus 2 --deps TRUE --repos NULL

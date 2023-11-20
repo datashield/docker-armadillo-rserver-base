@@ -1,8 +1,8 @@
 #
-# Process 'datashield/armadillo-rserver_caravan-uniform:1.0.1'
+# Process 'datashield/armadillo-rserver_habitat-zenith:draft'
 #
 
-FROM datashield/armadillo-rserver_caravan:1.0.0
+FROM datashield/armadillo-rserver_habitat:draft
 
 # Update package metdata
 RUN apt-get update -y
@@ -11,6 +11,7 @@ RUN apt-get update -y
 RUN apt-get install liblzma-dev libicu-dev -y
 
 # Install dsBase development package
+#ENV DSBASE_BRANCH "6.3.0"
 ENV DSBASE_BRANCH "6.2.0"
 RUN installGithub.r "datashield/dsBase@${DSBASE_BRANCH}" --deps TRUE
 
@@ -19,8 +20,8 @@ ENV DSMEDIATION_BRANCH "0.0.3"
 RUN installGithub.r "datashield/dsMediation@${DSMEDIATION_BRANCH}" --deps TRUE
 
 # Install dsMTLBase development package
-ENV DSMTLBASE_BRANCH "0.10.0"
-RUN installGithub.r "datashield/dsMTLBase@${DSMTLBASE_BRANCH}" --deps TRUE
+ENV DSMTLBASE_BRANCH "0.9.9"
+RUN installGithub.r "transbioZI/dsMTLBase@${DSMTLBASE_BRANCH}" --deps TRUE
 
 # Install dsSurvival development package
 ENV DSSURVIVAL_BRANCH "v2.1.2"
@@ -41,11 +42,11 @@ RUN installBioc.r 'edgeR'
 RUN installBioc.r 'rexposome'
 
 # Install dsExposome development package
-ENV DSEXPOSOME_BRANCH "2.0.6"
+ENV DSEXPOSOME_BRANCH "2.0.9"
 RUN installGithub.r "isglobal-brge/dsExposome@${DSEXPOSOME_BRANCH}" --deps TRUE
 
 # Install dsOmics development package
-ENV DSOMICS_BRANCH "v1.0.17"
+ENV DSOMICS_BRANCH "v1.0.18-2"
 RUN installGithub.r "isglobal-brge/dsOmics@${DSOMICS_BRANCH}" --deps TRUE
 
 # Setup entry point to MolgenisRServer::Rserve
